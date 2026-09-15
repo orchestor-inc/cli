@@ -1,0 +1,23 @@
+name: Bug report
+description: Report a problem with Orchestor CLI.
+body:
+  - type: input
+    id: version
+    attributes:
+      label: CLI version
+      description: Run orc --version.
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Operating system and architecture
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Describe what happened and what you expected. Remove tokens, private keys, and customer data before submitting.
+    validations:
+      required: true
